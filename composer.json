@@ -1,0 +1,25 @@
+{
+    "name": "ahmedmahfouz/bitly-shortner",
+    "description": "package make links short and secure",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "Ahmedmahfouz\\Bitly\\": "src/"
+        }
+    },
+    "authors": [{
+        "name": "ahmed"
+    }],
+    "minimum-stability": "dev",
+    "require": {},
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Ahmedmahfouz\\Bitly\\BitlyServiceProvider"
+            ],
+            "aliases": {
+                "Bitly": "Ahmedmahfouz\\Bitly\\BitlyShortner"
+            }
+        }
+    }
+}
