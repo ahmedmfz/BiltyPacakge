@@ -1,18 +1,26 @@
 {
-    "name": "mahfouz/bitly",
-    "description": "short links generated",
+    "name": "ahmedmahfouz/bitly",
+    "description": "generate short links",
     "type": "library",
     "autoload": {
         "psr-4": {
-            "Mahfouz\\Bitly\\": "src/"
+            "Ahmedmahfouz\\Bitly\\": "src/"
         }
     },
-    "authors": [
-        {
-            "name": "ahmedmahfouz",
-            "email": "ahmedmahfouz2060@gmail.com"
-        }
-    ],
+    "authors": [{
+        "name": "ahmedmahfouz",
+        "email": "ahmedmahfouz2060@gmail.com"
+    }],
     "minimum-stability": "dev",
-    "require": {}
+    "require": {},
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Ahmedmahfouz\\Bitly\\BitlyServiceProvider"
+            ],
+            "aliases": {
+                "Bitly": "Ahmedmahfouz\\Bitly\\BitlyShortner"
+            }
+        }
+    }
 }

@@ -1,6 +1,6 @@
 <?php 
 
-namespace Mahfouz\Bitly;
+namespace Ahmedmahfouz\Bitly;
 use Illuminate\Support\ServiceProvider;
 
 
