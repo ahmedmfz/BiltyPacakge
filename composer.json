@@ -4,7 +4,7 @@
     "type": "library",
     "autoload": {
         "psr-4": {
-            "Ahmedmahfouz\\Bitly\\": "src/"
+            "Bitly\\": "src/"
         }
     },
     "authors": [{
@@ -15,10 +15,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Ahmedmahfouz\\Bitly\\BitlyServiceProvider"
+                "Bitly\\BitlyServiceProvider"
             ],
             "aliases": {
-                "Bitly": "Ahmedmahfouz\\Bitly\\BitlyShortner"
+                "Bitly": "Bitly\\BitlyShortner"
             }
         }
     }
