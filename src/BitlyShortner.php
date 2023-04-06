@@ -1,12 +1,12 @@
 <?php 
 
-namespace Bitly\BitlyShortner;
+namespace Mahfouz\Bitly;
 use Illuminate\Support\Facades\Http;
 
 class BitlyShortner{
     
     public static function shorten($long_link = null){
-        $response = \Http::withHeaders([
+        $response = Http::withHeaders([
                     'Authorization' => config('bitly.token') ,
                         ])->post('https://api-ssl.bitly.com/v4/shorten',[
                             "domain"   => "bit.ly",

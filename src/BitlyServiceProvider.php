@@ -1,7 +1,9 @@
 <?php 
 
-namespace Bitly\BitlyShortner;
+namespace Mahfouz\Bitly;
 use Illuminate\Support\ServiceProvider;
+
+
 class  BitlyServiceProvider extends ServiceProvider{
 
     /**
